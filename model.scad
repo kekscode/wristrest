@@ -1,7 +1,10 @@
-$fn=50; // Visual detail (lower this for preview renders)
-WIDTH = 100; // 100 to 400
-DEPTH = 100; // 80 to 120
-HEIGHT = 15; // 15 to 30
+$fn=10; // Visual detail (lower this for preview renders)
+WIDTH = 100; // [100:400]
+DEPTH = 80; // [80:120]
+HEIGHT = 20; // [15:30]
+
+/* Render the model */
+RoundedWristRest();
 
 /* 
 This generates the dynamic molding for the palm of your hands
@@ -55,5 +58,3 @@ module RoundedWristRest() {
     cylinder(r=1, h=1);
   }
 }
-
-RoundedWristRest();
